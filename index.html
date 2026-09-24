@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boucler — Assistance et confidentialité</title>
+<meta name="description" content="Assistance et politique de confidentialité de Boucler, application de budget pour iPhone.">
+<style>
+  :root {
+    --rouille: #B3330D;
+    --creme: #F8F2E8;
+    --fond: #F8F2E8;
+    --carte: #FFFFFF;
+    --texte: #1C1B1A;
+    --discret: #6B6560;
+    --trait: #E3DACB;
+    --lien: #B3330D;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #141110;
+      --carte: #1F1B19;
+      --texte: #F2EDE6;
+      --discret: #A59C94;
+      --trait: #332C27;
+      --lien: #E98A63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--texte);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .bandeau {
+    background: var(--rouille);
+    color: var(--creme);
+    padding: 56px 16px 48px;
+    text-align: center;
+  }
+  .bandeau img { width: 88px; height: 88px; border-radius: 20px; margin-bottom: 20px; }
+  .bandeau h1 { margin: 0 0 10px; font-size: 2.2rem; letter-spacing: -0.02em; }
+  .bandeau p { margin: 0; opacity: 0.9; font-size: 1.05rem; }
+  main { max-width: 680px; margin: 0 auto; padding: 0 16px 72px; }
+  section {
+    background: var(--carte);
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-top: 28px;
+  }
+  h2 { font-size: 1.35rem; margin: 0 0 14px; letter-spacing: -0.01em; }
+  h3 { font-size: 1.05rem; margin: 26px 0 6px; }
+  h3:first-of-type { margin-top: 12px; }
+  p, li { color: var(--texte); }
+  ul { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 8px; }
+  a { color: var(--lien); }
+  .discret { color: var(--discret); font-size: 0.92rem; }
+  .contact {
+    display: inline-block;
+    background: var(--rouille);
+    color: var(--creme);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 13px 22px;
+    border-radius: 12px;
+    margin-top: 6px;
+  }
+  footer {
+    text-align: center;
+    padding: 0 16px 56px;
+    color: var(--discret);
+    font-size: 0.88rem;
+  }
+  hr { border: 0; border-top: 1px solid var(--trait); margin: 26px 0; }
+</style>
+</head>
+<body>
+
+<div class="bandeau">
+  <!-- Dépose AppIcon.png à la racine du dépôt pour afficher l'icône ; sans lui, la ligne disparaît d'elle-même. -->
+  <img src="AppIcon.png" alt="" onerror="this.remove()">
+  <h1>Boucler</h1>
+  <p>Votre budget plaisir, d'un coup d'œil.</p>
+</div>
+
+<main>
+
+  <section>
+    <h2>Assistance</h2>
+    <p>Une question, une idée d'amélioration, un problème rencontré dans l'application&nbsp;? Écrivez-moi, je lis tout.</p>
+    <p><a class="contact" href="mailto:contact.boucler@gmail.com">contact.boucler@gmail.com</a></p>
+    <p class="discret" style="margin-top:18px">Pour signaler un problème, indiquez si possible ce que vous faisiez au moment où il est survenu, la version de Boucler et celle d'iOS. Les deux lignes « Proposer une amélioration » et « Signaler un problème », en bas des réglages de l'application, préparent ce message pour vous.</p>
+  </section>
+
+  <section>
+    <h2>Questions fréquentes</h2>
+
+    <h3>Boucler se connecte-t-il à ma banque&nbsp;?</h3>
+    <p>Non, jamais. Tout est saisi à la main. C'est un choix&nbsp;: aucune connexion bancaire signifie aucun identifiant à confier, et aucune donnée qui circule.</p>
+
+    <h3>Où sont stockées mes données&nbsp;?</h3>
+    <p>Uniquement sur votre iPhone. Il n'y a ni compte, ni serveur, ni synchronisation. Personne d'autre que vous n'y a accès, moi compris.</p>
+
+    <h3>Comment sauvegarder mes données&nbsp;?</h3>
+    <p>Elles sont incluses dans la sauvegarde de votre iPhone (iCloud ou ordinateur), comme celles des autres applications. Vous pouvez aussi exporter toutes vos dépenses et rentrées au format CSV depuis les réglages.</p>
+
+    <h3>Que se passe-t-il si je supprime l'application&nbsp;?</h3>
+    <p>Les données sont supprimées avec elle. Pensez à exporter votre CSV avant, si vous souhaitez en garder une trace.</p>
+
+    <h3>Pourquoi la période ne suit-elle pas le mois calendaire&nbsp;?</h3>
+    <p>Parce qu'un budget se vit d'une paie à la suivante, pas du 1er au 31. Vous indiquez votre jour de paie et Boucler cale ses périodes dessus. Si vous préférez le mois calendaire, choisissez le 1er.</p>
+
+    <h3>Y a-t-il une version iPad, Mac ou Android&nbsp;?</h3>
+    <p>Non, Boucler est pensé pour l'iPhone uniquement.</p>
+
+    <h3>Puis-je partager mon budget avec mon conjoint&nbsp;?</h3>
+    <p>Vous pouvez gérer un budget de couple sur un seul iPhone&nbsp;: chaque membre a son revenu, et chaque dépense se répartit au prorata, à parts égales ou à la charge d'une seule personne. Il n'y a en revanche pas de partage entre deux téléphones.</p>
+  </section>
+
+  <section>
+    <h2>Confidentialité</h2>
+    <p><strong>Boucler ne collecte aucune donnée.</strong> Ce n'est pas une formule, c'est la description technique de l'application.</p>
+
+    <h3>Ce qui n'existe pas dans Boucler</h3>
+    <ul>
+      <li>Aucun compte, aucune inscription, aucun mot de passe.</li>
+      <li>Aucun serveur&nbsp;: l'application ne dispose d'aucune fonction réseau et fonctionne hors connexion.</li>
+      <li>Aucune publicité, aucun traceur, aucun outil de mesure d'audience, aucun kit de développement tiers.</li>
+      <li>Aucune connexion bancaire, aucun agrégateur de comptes.</li>
+    </ul>
+
+    <h3>Vos données</h3>
+    <p>Les membres du foyer, leurs revenus, vos dépenses, vos abonnements et vos rentrées d'argent sont enregistrés uniquement dans la mémoire de votre iPhone. Ils ne sont transmis à personne, ni à moi, ni à un tiers. Ils sont supprimés lorsque vous supprimez l'application.</p>
+
+    <h3>Appareil photo</h3>
+    <p>L'accès à l'appareil photo sert exclusivement à lire un ticket de caisse pour pré-remplir une dépense. La lecture se fait sur l'appareil, en direct&nbsp;: aucune photo n'est prise, enregistrée ni envoyée. Vous pouvez refuser cet accès, le reste de l'application fonctionne normalement.</p>
+
+    <h3>Notifications</h3>
+    <p>Les rappels de prélèvement, si vous les activez, sont des notifications locales planifiées par votre iPhone. Aucune notification ne transite par un serveur.</p>
+
+    <h3>Si vous m'écrivez</h3>
+    <p>Le courrier que vous m'envoyez à l'adresse ci-dessus arrive dans une boîte Gmail ordinaire. Il contient ce que vous avez choisi d'y mettre. Je m'en sers pour vous répondre et corriger ce qui doit l'être, rien d'autre, et je ne le transmets à personne.</p>
+
+    <h3>Enfants</h3>
+    <p>L'application ne s'adresse pas spécifiquement aux enfants et ne collecte aucune donnée, quel que soit l'âge de la personne qui l'utilise.</p>
+
+    <h3>Modifications</h3>
+    <p>Si cette politique change un jour, la date ci-dessous sera mise à jour. Comme l'application ne collecte rien, aucun changement ne peut porter sur des données déjà recueillies.</p>
+
+    <hr>
+    <p class="discret">Dernière mise à jour&nbsp;: 24 septembre 2026.</p>
+  </section>
+
+</main>
+
+<footer>
+  Boucler — application de budget pour iPhone.<br>
+  <a href="mailto:contact.boucler@gmail.com">contact.boucler@gmail.com</a>
+</footer>
+
+</body>
+</html>
